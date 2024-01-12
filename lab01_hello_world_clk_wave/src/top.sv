@@ -1,3 +1,6 @@
+/*
+	lab01
+*/
 module top;
 	logic clk=0;   //clock
 	logic sig1;  //signal 1
@@ -19,7 +22,7 @@ module top;
 		#1;
 		#2;
 		$display("at time = ", $time, " end of the file"); //2+50+1+2=55
+		
 		$finish;    
     end
-	
 endmodule
