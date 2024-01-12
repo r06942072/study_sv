@@ -1,4 +1,22 @@
-[class_note]
+# lab steps
+*
+steps
+	cd lab01
+	iverilog -g2012 -o out src/*
+		-g2012 applies sv lrm IEEE1800-2012
+	vvp out
+	gtkwave top.vcd
+--------------------------------------------------------------
+# public resources
+- hdlbits
+	https://hdlbits.01xz.net/
+- asic-world
+	https://www.asic-world.com/examples/systemverilog/index.html
+		
+`code`
+--------------------------------------------------------------
+# note
+## class_note, vicky
 *
 20240125
 
@@ -16,24 +34,7 @@
 	ref/icarus_verilog教學.pptx
 	ref
 		https://www.youtube.com/watch?v=5Kync4z5VOw
---------------------------------------------------------------
-[lab]
 *
-steps
-	cd lab01
-	iverilog -g2012 -o out src/top.sv
-		IEEE1800-2012
-	iverilog -o out src/top.sv
-	vvp out
-	gtkwave top.vcd
+邏輯設計，python
+未來課程VLSI
 	
---------------------------------------------------------------
-[resources]
-*
-hdlbits
-	https://hdlbits.01xz.net/
-
---------------------------------------------------------------
-[archive below]
-	邏輯設計，python
-	未來課程VLSI
