@@ -1,0 +1,60 @@
+$date
+	Tue Jan 16 17:17:23 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module top $end
+$var reg 1 ! clk $end
+$var reg 2 " my_struct1 [1:0] $end
+$var reg 2 # my_struct2 [1:0] $end
+$var reg 1 $ my_bit $end
+$var integer 32 % my_int [31:0] $end
+$var integer 32 & my_integer [31:0] $end
+$scope function my_func $end
+$upscope $end
+$scope task my_task $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx &
+b0 %
+0$
+bx #
+bx "
+0!
+$end
+#5
+1!
+#10
+0!
+#15
+1!
+#20
+0!
+#25
+1!
+#30
+0!
+#35
+1!
+#40
+0!
+bx1 #
+b1 "
+b101000 &
+b11110 %
+1$
+#41
+0!
+#45
+0!
+#91
