@@ -16,6 +16,7 @@
 ### 20240125
 
 ### 20240118
+	sv_lrm_2017, ch21.7 vcd files
 	ref/Basic Verilog RTL.pptx
 
 ### 20240111
