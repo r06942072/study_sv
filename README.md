@@ -14,10 +14,15 @@
 # note
 ## class_note, vicky
 ### 20240125
-
+	lab02_datatype_task_func
+	typedef
+	ref/Basic Verilog RTL.pptx
+	
 ### 20240118
 	sv_lrm_2017, ch21.7 vcd files
-	ref/Basic Verilog RTL.pptx
+	sv_lrm_2017, ch23 hdl hierarchy
+	https://www.asic-world.com/systemverilog/hierarchy2.html
+	sv_lrm_2017, ch13 function task
 
 ### 20240111
 	env setup
