@@ -1,0 +1,45 @@
+$date
+	Fri Jan 19 10:33:14 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module top $end
+$var reg 2 ! a [1:0] $end
+$var reg 2 " b [1:0] $end
+$var reg 2 # c [1:0] $end
+$var reg 2 $ d [1:0] $end
+$var reg 2 % e [1:0] $end
+$var reg 2 & f [1:0] $end
+$var reg 1 ' clk $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0'
+b11 &
+b10 %
+b1 $
+b11 #
+b10 "
+b1 !
+$end
+#5
+b10 #
+b1 "
+b1 &
+b1 %
+1'
+#10
+0'
+#15
+b1 #
+1'
+#20
+0'

@@ -1,11 +1,13 @@
 # lab steps
 	cd lab01
 	iverilog -g2012 -o out src/*
-		-g2012 applies sv lrm IEEE1800-2012
+	iverilog -g2012 -gsupported-assertions -o out src/*
 	vvp out
 	gtkwave top.vcd
 ---
 # public resources
+- iverilog
+	- https://iverilog.fandom.com/wiki/Iverilog_Flags
 - hdlbits
 	- https://hdlbits.01xz.net/
 - asic-world

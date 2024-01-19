@@ -1,0 +1,80 @@
+$date
+	Fri Jan 19 10:46:13 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module top $end
+$var reg 2 ! d [1:0] $end
+$var reg 2 " q1 [1:0] $end
+$var reg 2 # q2 [1:0] $end
+$var reg 1 $ clk $end
+$var reg 1 % reset $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0%
+0$
+bx #
+bx "
+bx !
+$end
+#5
+1$
+#10
+0$
+#12
+b0 #
+1%
+#15
+b0 "
+1$
+#20
+0$
+#25
+1$
+#30
+0$
+#32
+b10 !
+#35
+1$
+#40
+0$
+#45
+1$
+#49
+0%
+#50
+0$
+#52
+b11 !
+#55
+b11 #
+b11 "
+1$
+#60
+0$
+#65
+1$
+#70
+0$
+#75
+1$
+#80
+0$
+#85
+1$
+#90
+0$
+#95
+1$
+#100
+0$
