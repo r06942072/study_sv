@@ -1,5 +1,12 @@
 /*
 	lab06
+	sync reset: 
+		CLK takes priority over RESET
+		RESET condition checked after the clock edge 
+	async reset:
+		RESET takes priority over CLK
+		RESET condition checked before the clock edge
+		RESET added to sensitivity list
 */
 module top;
 	

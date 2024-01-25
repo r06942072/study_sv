@@ -15,10 +15,17 @@
 ---
 # note
 ## class_note, vicky
+
+### 2024??
+
+### 20240201
+	lab03_counter
+	ref/Basic Verilog RTL.pptx
+	
 ### 20240125
 	lab02_datatype_task_func
-	typedef
-	ref/Basic Verilog RTL.pptx
+	sv_lrm_2017, ch6.18 User-defined types, typedef
+	sv_lrm_2017, ch10.6.2 force release
 	
 ### 20240118
 	sv_lrm_2017, ch21.7 vcd files

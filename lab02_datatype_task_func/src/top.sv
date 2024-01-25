@@ -1,4 +1,3 @@
-
 //sv_lrm2017, ch6.18 typedef
 typedef struct packed{ 
 	logic my_logic;
@@ -51,6 +50,8 @@ module top;
 		my_str = "this is a sentence."; 
 		
 		my_task();
+		#10;
+		release clk;
 		
 		#50;
 		$display("at time = %0d:", $time, "end sim");
