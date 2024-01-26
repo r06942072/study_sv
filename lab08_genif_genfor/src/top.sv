@@ -32,10 +32,13 @@ module top;
 	
     initial begin
         $dumpfile("top.vcd");
-		$dumpvars(0, top);  //have bug, so workaround with following codes
-		$dumpvars(0, top.genblk3[0].inst_sub.sig_in_sub);
+		$dumpvars(0, top);  //only dump the sigs with vc
+		$dumpvars(0, top.genblk3[0].inst_sub.sig_in_sub); //can dump by this way if no vc
 		$dumpvars(0, top.genblk3[1].inst_sub.sig_in_sub);
 		$dumpvars(0, top.genblk4.inst_sub3.sig_in_sub3);
+		
+		#10;
+		top.gen1[0].inst_sub.sig_in_sub = 1; //to make signal visable by gtkwave, we purposely add a vc
 		
 		#100;
 		$display("at time = %0d", $time, ", end of the sim");

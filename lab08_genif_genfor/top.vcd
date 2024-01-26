@@ -1,5 +1,5 @@
 $date
-	Fri Jan 26 16:29:55 2024
+	Fri Jan 26 16:50:51 2024
 $end
 $version
 	Icarus Verilog
@@ -13,81 +13,84 @@ $var reg 1 " clk $end
 $scope begin gen1[0] $end
 $var parameter 2 # i $end
 $scope module inst_sub $end
+$var reg 1 $ sig_in_sub $end
 $upscope $end
 $upscope $end
 $scope begin gen1[1] $end
-$var parameter 2 $ i $end
-$scope module inst_sub $end
-$upscope $end
-$upscope $end
-$scope begin gen2[0] $end
 $var parameter 2 % i $end
 $scope module inst_sub $end
 $upscope $end
 $upscope $end
-$scope begin gen2[1] $end
+$scope begin gen2[0] $end
 $var parameter 2 & i $end
 $scope module inst_sub $end
 $upscope $end
 $upscope $end
+$scope begin gen2[1] $end
+$var parameter 2 ' i $end
+$scope module inst_sub $end
+$upscope $end
+$upscope $end
 $scope begin gen2[2] $end
-$var parameter 3 ' i $end
+$var parameter 3 ( i $end
 $scope module inst_sub $end
 $upscope $end
 $upscope $end
 $scope begin genblk3[0] $end
-$var parameter 2 ( i $end
+$var parameter 2 ) i $end
 $scope module inst_sub $end
-$var reg 1 ) sig_in_sub $end
+$var reg 1 * sig_in_sub $end
 $upscope $end
 $upscope $end
 $scope begin genblk3[1] $end
-$var parameter 2 * i $end
+$var parameter 2 + i $end
 $scope module inst_sub $end
-$var reg 1 + sig_in_sub $end
+$var reg 1 , sig_in_sub $end
 $upscope $end
 $upscope $end
 $scope begin genblk3[2] $end
-$var parameter 3 , i $end
+$var parameter 3 - i $end
 $scope module inst_sub $end
 $upscope $end
 $upscope $end
 $scope begin genblk3[3] $end
-$var parameter 3 - i $end
+$var parameter 3 . i $end
 $scope module inst_sub $end
 $upscope $end
 $upscope $end
 $scope begin genblk4 $end
 $scope module inst_sub3 $end
-$var reg 1 . sig_in_sub3 $end
+$var reg 1 / sig_in_sub3 $end
 $upscope $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 $comment Show the parameter values. $end
 $dumpall
-b11 -
-b10 ,
-b1 *
-b0 (
-b10 '
-b1 &
-b0 %
-b1 $
+b11 .
+b10 -
+b1 +
+b0 )
+b10 (
+b1 '
+b0 &
+b1 %
 b0 #
 b0 !
 $end
 #0
 $dumpvars
-0.
-0+
-0)
+0/
+0,
+0*
+0$
 0"
 $end
 #5
 1"
 #10
 0"
+1$
 #15
 1"
 #20
@@ -123,4 +126,8 @@ $end
 #95
 1"
 #100
+0"
+#105
+1"
+#110
 0"
