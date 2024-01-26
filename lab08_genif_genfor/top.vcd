@@ -1,0 +1,72 @@
+$date
+	Fri Jan 26 16:03:59 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module top $end
+$var reg 1 ! clk $end
+$scope begin gen[0] $end
+$var parameter 2 " i $end
+$scope module inst_sub $end
+$upscope $end
+$upscope $end
+$scope begin gen[1] $end
+$var parameter 2 # i $end
+$scope module inst_sub $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1 #
+b0 "
+$end
+#0
+$dumpvars
+0!
+$end
+#5
+1!
+#10
+0!
+#15
+1!
+#20
+0!
+#25
+1!
+#30
+0!
+#35
+1!
+#40
+0!
+#45
+1!
+#50
+0!
+#55
+1!
+#60
+0!
+#65
+1!
+#70
+0!
+#75
+1!
+#80
+0!
+#85
+1!
+#90
+0!
+#95
+1!
+#100
+0!
