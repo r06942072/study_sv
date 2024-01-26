@@ -10,6 +10,7 @@ module top;
     initial begin
         $dumpfile("top.vcd");
 		$dumpvars;
+		// same as dumpvars (0, top);
 
 		#100;
 		$display("at time = %0d", $time, ", end of the sim");
