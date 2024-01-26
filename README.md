@@ -13,13 +13,13 @@
 - asic-world
 	- https://www.asic-world.com/examples/systemverilog/index.html	
 ---
-# class_note
-## vicky
+# class note
+## Vicky
 - 2024??
 - 2024??
 - 20240201
-	lab03_counter
-	ref/Basic Verilog RTL.pptx
+	- lab03_counter
+	- ref/Basic Verilog RTL.pptx
 - 20240125
 	- lab02_datatype_task_func
 	- sv_lrm_2017, ch6.18 User-defined types, typedef
