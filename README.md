@@ -15,11 +15,17 @@
 ---
 # class note
 ## Vicky
-- 2024??
-- 2024??
+- 20240222
+	- 
+- 20240206
+	- lab04_fsm
+	- ref/Basic Verilog RTL.pptx
 - 20240201
 	- lab03_counter
 	- ref/Basic Verilog RTL.pptx
+	- concatenation{}
+	- ifelse priority
+	- D-flipflop
 - 20240125
 	- lab02_datatype_task_func
 	- sv_lrm_2017, ch6.18 User-defined types, typedef
