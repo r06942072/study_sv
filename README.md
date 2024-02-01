@@ -16,7 +16,7 @@
 # class note
 ## Vicky
 - 20240222
-	- 
+	- todo
 - 20240206
 	- lab04_fsm
 	- ref/Basic Verilog RTL.pptx
