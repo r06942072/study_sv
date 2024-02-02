@@ -4,6 +4,9 @@
 	iverilog -g2012 -gsupported-assertions src/*
 	vvp a.out
 	gtkwave top.vcd
+# tool notes
+- iverilog
+	- sv clocking not supported
 ---
 # public resources
 - iverilog
@@ -15,6 +18,9 @@
 ---
 # class note
 ## Vicky
+- 2024????
+- 2024????
+- 2024????
 - 20240222
 	- todo
 - 20240206
