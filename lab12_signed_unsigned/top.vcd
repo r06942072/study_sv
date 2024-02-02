@@ -1,0 +1,90 @@
+$date
+	Fri Feb 02 13:36:50 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module top $end
+$var wire 4 ! sig9 [3:0] $end
+$var wire 4 " sig6 [3:0] $end
+$var wire 4 # sig3 [3:0] $end
+$var wire 4 $ sig15 [3:0] $end
+$var wire 4 % sig12 [3:0] $end
+$var reg 3 & sig1 [2:0] $end
+$var reg 3 ' sig10 [2:0] $end
+$var reg 2 ( sig11 [1:0] $end
+$var reg 3 ) sig13 [2:0] $end
+$var reg 2 * sig14 [1:0] $end
+$var reg 3 + sig2 [2:0] $end
+$var reg 3 , sig4 [2:0] $end
+$var reg 3 - sig5 [2:0] $end
+$var reg 3 . sig7 [2:0] $end
+$var reg 3 / sig8 [2:0] $end
+$var reg 1 0 clk $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+00
+b11 /
+b111 .
+b11 -
+b111 ,
+b11 +
+b11 *
+b111 )
+b11 (
+b111 '
+b111 &
+b1010 %
+b1110 $
+b10 #
+b1010 "
+b10 !
+$end
+#5
+10
+#10
+00
+#15
+10
+#20
+00
+#25
+10
+#30
+00
+#35
+10
+#40
+00
+#45
+10
+#50
+00
+#55
+10
+#60
+00
+#65
+10
+#70
+00
+#75
+10
+#80
+00
+#85
+10
+#90
+00
+#95
+10
+#100
+00
