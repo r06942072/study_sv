@@ -20,12 +20,14 @@
 ## Vicky
 - 2024????
 - 2024????
-- 2024????
+- 20240229
+	- ??
 - 20240222
-	- todo
-- 20240206
 	- lab04_fsm
+- 20240206
 	- ref/Basic Verilog RTL.pptx
+	- comb and seq logic
+	- sync and async reset
 - 20240201
 	- lab03_counter
 	- ref/Basic Verilog RTL.pptx
