@@ -13,7 +13,7 @@ module test_program(
         rst_n = 1;
         #100;
         start_fsm = 1;
-        wait(cs_fsm == 2'd3);
+        wait(cs_fsm == 2'd3); //LAST
         $display("%0d", $time, " ns, cs = LAST");
         start_fsm = 0;
         #100; 
