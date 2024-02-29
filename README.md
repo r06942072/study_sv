@@ -20,10 +20,17 @@
 ## Vicky
 - 2024????
 - 2024????
+- 2024????
+- 20240314
+	- none
+- 20240307
+	- lab06
+	- todo, fork join any
 - 20240229
 	- lab04_fsm, bit_sel, part_sel
-	- lab05
-	- lab06
+	- lab05, ba nba
+		- low power, upf
+	- lab06, three initial begin end blocks
 - 20240222
 	- lab04_fsm
 - 20240206

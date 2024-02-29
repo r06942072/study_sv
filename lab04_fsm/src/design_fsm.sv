@@ -13,7 +13,7 @@ module design_fsm(
 
     logic [1:0] cs; //current state, unknown 
     logic [1:0] ns; //next state
-
+	
     assign cs_fsm = cs;
 	
 	//seq logic
@@ -41,6 +41,7 @@ module design_fsm(
                 ns = IDLE;
         endcase   
     end
+	
 /*
 	logic [254:0] abc; 
     always @(posedge clk) begin

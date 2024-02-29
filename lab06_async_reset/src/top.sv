@@ -9,7 +9,6 @@
 		RESET added to sensitivity list
 */
 module top;
-	
 	bit clk;
 	always #5 clk = ~clk; //clock with period 10sec
 	bit reset;
@@ -33,23 +32,41 @@ module top;
 			q2 <= d;
 	end	
 	
-    initial begin
+    initial begin //100
         $dumpfile("top.vcd");
 		$dumpvars;
 		#100;
 		$display("at time = ", $time, " end of the sim");
 		$finish;    
     end
-	initial begin
+	initial begin //49
 		#12;
 		reset = 1;
 		#37;
 		reset = 0;
 	end
-	initial begin
+	initial begin //52
 		#32;
 		d = 2'd2;
 		#20;
 		d = 2'd3;
 	end
 endmodule
+
+/*
+The alternative of three initial begin-end block
+
+initial begin //sequential block
+	fork //parallel 
+		begin: block1
+		end
+		begin: block2
+		end
+		begin: block3
+		end
+	join
+	join-any
+	join-none
+end
+
+*/

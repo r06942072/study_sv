@@ -32,9 +32,10 @@ module top;
         .*
     );
 	
-	logic [3:0] total = 4'b0011;
-	logic bit_sel = total[1];
-	logic [1:0] part_sel = total[3:2];
+	logic [3:0] total = 4'b0011; //total[3], total[2], total[1], total[0]
+	logic bit_sel = total[1]; //1
+	logic [1:0] part_sel = total[2:1]; //01
+	logic [1:0] part_sel2 = total[5:4]; //xx, error case
 	
 	initial begin
 		$dumpfile("top.vcd");

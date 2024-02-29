@@ -11,15 +11,15 @@ module top;
 
 	logic [1:0] d = 2'd1; 
 	logic [1:0] e = 2'd2;
-	logic [1:0] f = 2'd3;	
+	logic [1:0] f = 2'd3;
 	
-	//non-blocking
+	//non-blocking, syntheizable code common
 	always @(posedge clk) begin
 		b <= a;  //b is 1
 		c <= b;  //c is 2
     end
 	
-	//blocking
+	//blocking, non-common
 	always @(posedge clk) begin
 		e = d; //e is 1
 		f = e; //f is 1
@@ -34,3 +34,4 @@ module top;
 		$finish;    
     end
 endmodule
+//---------------------------------------------------------
