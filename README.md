@@ -20,12 +20,14 @@
 ## Vicky
 - 2024????
 - 2024????
-- 2024????
+- 20240321
+	- ??
 - 20240314
-	- none
+	- lab08, genif genfor
+	- lab07, star and interface for ips connection
 - 20240307
 	- lab06
-	- todo, fork join any
+	- lab07, top, dut, tb for op1 + op2
 - 20240229
 	- lab04_fsm, bit_sel, part_sel
 	- lab05, ba nba

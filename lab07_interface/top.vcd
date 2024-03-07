@@ -1,5 +1,5 @@
 $date
-	Fri Jan 19 11:01:30 2024
+	Thu Mar 07 21:53:40 2024
 $end
 $version
 	Icarus Verilog
@@ -8,8 +8,8 @@ $timescale
 	1s
 $end
 $scope module top $end
-$var wire 1 ! operand2 $end
-$var wire 1 " operand1 $end
+$var wire 1 ! signal2 $end
+$var wire 1 " signal1 $end
 $var wire 2 # ans [1:0] $end
 $var reg 1 $ clk $end
 $scope module dut $end

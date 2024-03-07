@@ -21,10 +21,10 @@ module top;
 	always @(posedge clk) begin 
 		if (reset)  //sync reset
 			q1 <= 2'd0;
-		else
+		else 
 			q1 <= d;
 	end
-	
+
 	always @(posedge clk, posedge reset) begin //async reset
 		if (reset)
 			q2 <= 2'd0;
