@@ -6,6 +6,7 @@ module top;
 
 	always #5 clk = ~clk; //clock with period 10sec
 	
+	//syntax: scope_definition instance_name
 	intf tb_dut_if();
 	
 	testbench tb(

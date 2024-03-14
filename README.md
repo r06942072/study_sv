@@ -19,9 +19,11 @@
 # class note
 ## Vicky
 - 2024????
-- 2024????
+- 20240328
+	- lab??
 - 20240321
-	- ??
+	- lab09, udp
+	- lab10, udp
 - 20240314
 	- lab08, genif genfor
 	- lab07, star and interface for ips connection
