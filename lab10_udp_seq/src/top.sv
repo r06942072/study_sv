@@ -1,13 +1,15 @@
 /*
 	lab10
 	sv_lrm2017 29.7 seq udp
+		input: current_state: output
+	
 */
 primitive my_dff1 (q, clk, d); //not complete, falling edge, bug
     output q; reg q;
     input clk, d;
     table
         //clk d: current q: next q+
-        (01) 0: ?: 0;
+        (01) 0: ?: 0;  //? = 0, 1, and x
         (01) 1: ?: 1;
     endtable
 endprimitive
@@ -17,8 +19,8 @@ primitive my_dff2 (q, clk, d);
     input clk, d;
     table
         //clk d: current q: next q+
-        (01) 0: ?: 0;
-        (01) 1: ?: 1;
+        (01) 0: ?: 0; //rising edge
+        (01) 1: ?: 1; //rising edge
         (10) ?: ?: -; //falling edge, - no change
     endtable
 endprimitive
@@ -29,7 +31,7 @@ primitive my_dff3 (q, clk, d);
     table
         //clk d: current q: next q+
         r 0: ?: 0; //rising edge
-        r 1: ?: 1;
+        r 1: ?: 1; //rising edge
         f ?: ?: -; //falling edge, - no change
     endtable
 endprimitive
