@@ -27,7 +27,9 @@ module sub1
 #(parameter pa = 3)(
 	input logic clk
 );
-	bit [pa-1:0] arr1;
+	parameter p1 = 1;
+	bit [pa-1:0] arr1; //array
+	
 	initial begin
 		#10;
 		arr1[0] = 1;

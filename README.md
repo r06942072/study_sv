@@ -20,8 +20,14 @@
 ## Vicky
 - 2024????
 - 2024????
-- 2024????
+
+- 20240404
+	- lab17, wait_fork, billy_todo
+	- lab18, disable_fork, billy_todo
+	- lab12, 
+	- lab13
 - 20240328
+	- lab14,15,16, fork-join, join_any, join_none
 	- lab19, iff
 	- lab11, parameter
 - 20240321
