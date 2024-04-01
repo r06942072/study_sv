@@ -5,6 +5,8 @@
 	vvp a.out
 	gtkwave top.vcd
 # tool notes
+- Cadence Xcelium 20.09, used in lab20 after
+	- https://edaplayground.com/
 - iverilog
 	- sv clocking not supported
 ---
@@ -20,7 +22,7 @@
 ## Vicky
 - 2024????
 - 2024????
-	- billytodo, lab13, lab20...
+	- 
 - 20240404
 	- lab17, wait_fork, billy_todo
 	- lab18, disable_fork, billy_todo

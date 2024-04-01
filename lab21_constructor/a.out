@@ -1,0 +1,101 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2009.vpi";
+S_000001f3a0bab620 .scope package, "$unit" "$unit" 2 1;
+ .timescale 0 0;
+S_000001f3a0f72b30 .scope module, "top" "top" 3 5;
+ .timescale 0 0;
+C000001f3a0fa7b30  .class "C" [3]
+   0: "c1", "sb32"
+   1: "c2", "sb32"
+   2: "c3", "sb32"
+ ;
+C000001f3a0ba8370  .class "D" [6]
+   0: "c1", "sb32"
+   1: "c2", "sb32"
+   2: "c3", "sb32"
+   3: "d1", "sb32"
+   4: "d2", "sb32"
+   5: "d3", "sb32"
+ ;
+v000001f3a0f72e50_0 .var/cobj "inst1";
+v000001f3a0f72ef0_0 .var/2s "sig", 31 0;
+S_000001f3a0feab60 .scope class, "C" "C" 3 8, 3 8 0, S_000001f3a0f72b30;
+ .timescale 0 0;
+S_000001f3a0feacf0 .scope autofunction.obj, "new@" "new@" 3 12, 3 12 0, S_000001f3a0feab60;
+ .timescale 0 0;
+v000001f3a0feae80_0 .var/cobj "@";
+TD_top.C.new\x40 ;
+    %pushi/vec4 1, 0, 32;
+    %load/obj v000001f3a0feae80_0;
+    %store/prop/v 0, 32; Store in bool property c1
+    %pop/obj 1, 0;
+    %pushi/vec4 1, 0, 32;
+    %load/obj v000001f3a0feae80_0;
+    %store/prop/v 1, 32; Store in bool property c2
+    %pop/obj 1, 0;
+    %pushi/vec4 1, 0, 32;
+    %load/obj v000001f3a0feae80_0;
+    %store/prop/v 2, 32; Store in bool property c3
+    %pop/obj 1, 0;
+    %end;
+S_000001f3a0fa3df0 .scope class, "D" "D" 3 14, 3 14 0, S_000001f3a0f72b30;
+ .timescale 0 0;
+S_000001f3a0fa3f80 .scope autofunction.obj, "new@" "new@" 3 18, 3 18 0, S_000001f3a0fa3df0;
+ .timescale 0 0;
+v000001f3a0feaf20_0 .var/cobj "@";
+TD_top.D.new\x40 ;
+    %alloc S_000001f3a0feacf0;
+    %load/obj v000001f3a0feaf20_0;
+    %store/obj v000001f3a0feae80_0;
+    %callf/obj TD_top.C.new\x40, S_000001f3a0feacf0;
+    %load/obj v000001f3a0feae80_0;
+    %free S_000001f3a0feacf0;
+    %store/obj v000001f3a0feaf20_0;
+    %pushi/vec4 4, 0, 32;
+    %load/obj v000001f3a0feaf20_0;
+    %store/prop/v 3, 32; Store in bool property d1
+    %pop/obj 1, 0;
+    %load/obj v000001f3a0feaf20_0;
+    %prop/v 1;
+    %pop/obj 1, 0;
+    %load/obj v000001f3a0feaf20_0;
+    %store/prop/v 4, 32; Store in bool property d2
+    %pop/obj 1, 0;
+    %pushi/vec4 6, 0, 32;
+    %load/obj v000001f3a0feaf20_0;
+    %store/prop/v 5, 32; Store in bool property d3
+    %pop/obj 1, 0;
+    %end;
+    .scope S_000001f3a0f72b30;
+T_2 ;
+    %vpi_call/w 3 22 "$dumpfile", "top.vcd" {0 0 0};
+    %vpi_call/w 3 23 "$dumpvars" {0 0 0};
+    %delay 10, 0;
+    %pushi/vec4 3, 0, 32;
+    %store/vec4 v000001f3a0f72ef0_0, 0, 32;
+    %alloc S_000001f3a0feacf0;
+    %new/cobj C000001f3a0fa7b30;
+    %store/obj v000001f3a0feae80_0;
+    %callf/obj TD_top.C.new\x40, S_000001f3a0feacf0;
+    %load/obj v000001f3a0feae80_0;
+    %free S_000001f3a0feacf0;
+    %store/obj v000001f3a0f72e50_0;
+    %delay 100, 0;
+    %vpi_call/w 3 31 "$display", "at time = %0d", $time, ", end of the sim" {0 0 0};
+    %vpi_call/w 3 32 "$finish" {0 0 0};
+    %end;
+    .thread T_2;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "-";
+    "src/top.sv";
