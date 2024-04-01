@@ -1,4 +1,4 @@
-# lab steps
+# lab steps (with free simulator iverilog)
 	cd lab01
 	iverilog -g2012 src/*
 	iverilog -g2012 -gsupported-assertions src/*
@@ -19,13 +19,15 @@
 	- https://www.asic-world.com/examples/systemverilog/index.html	
 ---
 # class note
+## billy_todo
+- lab30_sva
+
 ## Vicky
 - 2024????
 - 2024????
-	- 
 - 20240404
-	- lab17, wait_fork, billy_todo
-	- lab18, disable_fork, billy_todo
+	- lab17, wait_fork
+	- lab18, disable_fork
 	- lab12, signed_unsigned
 	- lab13, packed unpacked
 - 20240328
