@@ -24,12 +24,13 @@
 
 ## Vicky
 - 2024????
-- 2024????
+- 20240411
+	- lab12, signed_unsigned, case4 ~ case5. extension
+	- lab13, packed unpacked
 - 20240404
 	- lab17, wait_fork
 	- lab18, disable_fork
-	- lab12, signed_unsigned
-	- lab13, packed unpacked
+	- lab12, signed_unsigned, case1 ~ case3, digital signal processing DSP
 - 20240328
 	- lab14,15,16, fork-join, join_any, join_none
 	- lab19, iff

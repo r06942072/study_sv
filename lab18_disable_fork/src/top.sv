@@ -56,3 +56,17 @@ module top;
     endtask
 	
 endmodule
+
+////////////////////////////////
+//module top;
+//	bit signal = 0;
+	//initial begin
+//		#10;
+//		wait(signal);
+//		$display("hello now");
+	//end
+	//initial begin
+//		#20;
+		//signal = 1;
+	//end
+//endmodule

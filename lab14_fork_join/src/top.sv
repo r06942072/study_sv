@@ -4,7 +4,7 @@
 */
 module top;
     initial begin
-		fork //parallel
+		fork //parallel, multi-thread
 			begin: block1
 				$display("at time = %5d, ", $time, " start block1");
 				#1;
