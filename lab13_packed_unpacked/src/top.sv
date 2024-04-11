@@ -4,7 +4,11 @@
 */
 
 module top;
+	//byte c2;
+	//bit signed [7:0] c2
+	
 	bit [7:0] p_arr1; // packed array
+	//bit [8] p_arr1; //illegal
 	
 	bit unp_arr1 [7:0]; // unpacked array 
 	bit unp_arr2 [8]; // unpacked array 
@@ -26,7 +30,7 @@ module top;
 		// same as dumpvars (0, top);
 		
 		//
-		st_packed = 8'h5a; //same as two lines below
+		st_packed = 8'h5a;  //same as two lines below
 		#10;
         st_packed.addr1 = 4'h5; 
         st_packed.addr2 = 4'ha; 
@@ -44,3 +48,37 @@ module top;
 		$finish;    
     end
 endmodule
+
+
+/// typedef
+// design unit
+// compilation unit CU
+/*
+	typedef struct  {  
+		logic [3:0] addr1;
+		logic [3:0] addr2;
+	} s1; 
+
+module m1;
+
+	s1 inst1;
+	logic sig_1;
+	
+	initial begin
+		inst1.addr1 = 4'b1111;
+	end
+	
+endmodule
+
+module m2;
+	s1 inst2;
+	initial begin
+		inst2.addr1 = 4'b1111;  //cannot
+	end
+	
+endmodule
+
+module m3;
+	
+endmodule
+*/

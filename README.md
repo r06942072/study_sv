@@ -23,10 +23,16 @@
 - lab30_sva
 
 ## Vicky
-- 2024????
+- 20240502
+
+- 20240425
+
+- 20240418
+	- lab20, class
 - 20240411
 	- lab12, signed_unsigned, case4 ~ case5. extension
 	- lab13, packed unpacked
+	- synthesis
 - 20240404
 	- lab17, wait_fork
 	- lab18, disable_fork

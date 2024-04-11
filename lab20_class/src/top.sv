@@ -2,7 +2,6 @@
 	lab20, sv_lrm 8.7 constructor
 	run on https://edaplayground.com/
 */
-
 module top;
 	int sig;
 	

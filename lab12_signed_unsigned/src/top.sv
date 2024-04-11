@@ -30,16 +30,16 @@ module top;
 	logic  [3:0] sig9;
 	assign sig9 = $signed(sig7) + $signed(sig8);	//'d2
 
-	//case4, zero extension on sig11
+	//case4, zero extension on sig11, because "+" at line37 is unsigned addition
 	logic  [2:0] sig10 = -1;  //default unsigned, so resolved as 'd7 not 'd-1
-	logic  [1:0] sig11 = 3;
+	logic  [1:0] sig11 = 3;   //zero extension
 	logic  [3:0] sig12;
 	assign sig12 = sig10 + sig11;  //'d10
 	
 	//case5, signed extension on sig14
 	logic  [2:0] sig13 = -1;  //'b111
-	logic  [1:0] sig14 = -1;  //'b11
-	logic  [3:0] sig15;  
+	logic  [1:0] sig14 = -1;  //'b11  -> 'b111
+	logic  [3:0] sig15;        
 	assign sig15 = $signed(sig13) + $signed(sig14); //'b1110
 	
     initial begin
@@ -52,3 +52,5 @@ module top;
 		$finish;    
     end
 endmodule
+
+//////
