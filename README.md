@@ -26,9 +26,11 @@
 - 20240502
 
 - 20240425
-
+	- lab22, rand
 - 20240418
+	- Xcelium Simulator, xrun. EDA playground
 	- lab20, class
+	- lab21, class constructor new
 - 20240411
 	- lab12, signed_unsigned, case4 ~ case5. extension
 	- lab13, packed unpacked
