@@ -7,7 +7,7 @@
 module top;
 	class C;
 		integer repeat_times;
-		rand bit [1:0] num_2b; //rand_mode
+		rand bit [1:0] num_2b; //rand_mode, default on
 		rand bit [2:0] num_3b; //constraint_mode
 		
 		function new (); //constructor
@@ -36,7 +36,7 @@ module top;
         end
 		
 		$display("test, rand_mode(0)");
-		inst1.num_2b.rand_mode(0);
+		inst1.num_2b.rand_mode(0); //off
 		repeat(inst1.repeat_times) begin
 			inst1.randomize();
 			$display("num_2b=%0d, num_3b=%0d", inst1.num_2b, inst1.num_3b);
@@ -49,7 +49,7 @@ module top;
 			$display("num_2b=%0d, num_3b=%0d", inst1.num_2b, inst1.num_3b);
         end
 		
-		$display("test, 1");
+		$display("test, 1");  // back to default. rand_mode on, constraint_mode on
 		inst1.num_2b.rand_mode(1);
 		inst1.c1.constraint_mode(1);
 		repeat(inst1.repeat_times) begin

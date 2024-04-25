@@ -19,8 +19,6 @@
 	- https://www.asic-world.com/examples/systemverilog/index.html	
 ---
 # class note
-## billy_todo
-- lab30_sva
 
 ## Vicky
 - 20240530
@@ -30,11 +28,13 @@
 - 20240516
 
 - 20240509
-	
+	- sva introduction, by pptx	
 - 20240502
+	- lab24, soft constraint
 	- sva introduction, by pptx
 - 20240425
 	- lab22, rand
+	- lab23, rand_mode, constraint_mode
 - 20240418
 	- Xcelium Simulator, xrun. EDA playground
 	- lab20, class
