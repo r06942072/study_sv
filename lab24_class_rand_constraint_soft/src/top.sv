@@ -39,3 +39,32 @@ module top;
 		$finish;    
     end
 endmodule
+
+///////////////////////////////
+// method1.      C::c3 { num_2b >= 2'd2; }; // sv_lrm2017 18.5.1 explicit
+// method2.      inst1.randomize() with { num_1b == 1; };
+/*
+class C;
+	rand bit [1:0] num_2b; //2 or 3
+	constraint c3;
+endclass
+C::c3 { num_2b >= 2'd2; };
+
+C inst1 = new();
+C inst2 = new();
+C inst3 = new();
+
+initial begin
+	repeat(10) begin
+		inst1.randomize();
+	end
+	
+	repeat(100) begin
+		inst2.randomize();
+	end	
+	
+	repeat(1000) begin
+		inst3.randomize() with { num_2b >= 2'd3; }; //runtime modification
+	end	
+end
+*/
