@@ -8,11 +8,9 @@
 		use assertion2 to verify design1
 		use assertion2 to verify design2
 */
-
 module top;
   	bit clk;    //clock
 	always #5 clk = ~clk; //clock with period 10sec	
-  
 	//////////////////////////////////////////////////////
 	bit start = 0; 
     bit x1, y1; //design1, x ##2 y
@@ -69,10 +67,14 @@ module top;
     sequence s2(x, y);
         (x ##[2:3] y); //same as (x ##2 y) or (x ##3 y)
     endsequence
-
+	
     a1_design1: assert property(@(posedge clk) start |=> s1(x1, y1)); //pass
     a2_design1: assert property(@(posedge clk) start |=> s2(x1, y1)); //pass
 
     a1_design2: assert property(@(posedge clk) start |=> s1(x2, y2)); //fail
     a2_design2: assert property(@(posedge clk) start |=> s2(x2, y2)); //fail
 endmodule
+//
+//assert 
+//	property
+//		sequence
