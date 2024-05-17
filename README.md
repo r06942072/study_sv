@@ -1,3 +1,5 @@
+billy todo, lab35 and after
+
 # lab steps (with free simulator iverilog)
 	cd lab01
 	iverilog -g2012 src/*
