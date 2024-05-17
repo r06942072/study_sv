@@ -21,15 +21,18 @@
 # class note
 
 ## Vicky
-- 2024??
+- 20240613
+	- lab33
+- 20240606
+	- lab32
 - 20240530
-
+	- lab32
 - 20240523
 	- https://blog.csdn.net/bleauchat/article/details/90415146
 	- lab31, sva_seq_delay, waveform of design 
+	- lab31, sva_seq_delay, strong weak sva 
 - 20240516
 	- lab31, sva_seq_delay
-	- note.pptx
 	- regex.txt
 		- https://web.mit.edu/hackl/www/lab/turkshop/slides/regex-cheatsheet.pdf
 - 20240509
