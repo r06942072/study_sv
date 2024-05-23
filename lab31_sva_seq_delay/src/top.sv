@@ -81,6 +81,7 @@ module top;
         x ##[+] y; // ##[+] is eq to ##[1:$]
     endsequence
 	
+	//label: assert...
     a1_design1: assert property(@(posedge clk) start |=> s1(x1, y1)); //pass
     a2_design1: assert property(@(posedge clk) start |=> s2(x1, y1)); //pass
 
