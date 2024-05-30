@@ -27,9 +27,11 @@ billy todo, lab35 and after
 	- lab33
 - 20240606
 	- lab32
+	- lab33
 - 20240530
 	- https://blog.csdn.net/bleauchat/article/details/90415146
 	- lab31, sva_seq_delay, a3 to a6, infinity
+	- bind a checker into a module dut
 - 20240523
 	- lab31, sva_seq_delay, waveform of design 
 	- lab31, sva_seq_delay, strong weak sva 

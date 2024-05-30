@@ -142,3 +142,48 @@ module top;
     a4_design5: assert property(@(posedge clk) start |=> strong( s4(x5, y5) ));  //pass
     a4_design6: assert property(@(posedge clk) start |=> strong( s4(x6, y6) ));  //fail
 endmodule
+/*
+//
+module VTOP;
+	//module_name instance_name
+	fr_cnt U1(); //16
+	fr_cnt #(.CNT_WIDTH(12)) U2();
+	//bind <module_dut> <module_sva> <inst_name>
+	bind fr_cnt fr_cnt_chkr SV_CHKR1(.*);
+endmodule
+
+//SOFT IP
+module fr_cnt(
+	output sig3
+);
+	parameter CNT_WIDTH = 16;
+	
+	//design 
+	logic [CNT_WIDTH-1: 0] sig1;
+	logic sig2;
+	
+	assign sig3 = (|sig1) && sig2;
+	fr_cnt_chkr SV_CHKR1(.*);
+endmodule
+
+checker fr_cnt_chkr;
+	//verification
+	a1: assert(sig1 == sig2);
+endchecker
+
+///////////////////////////////////
+hier tree
+test
+	my_dut
+		my_assert
+	my_dut2
+		my_assert
+test2
+	my_dut
+		my_assert
+
+module test
+	dut my_dut;
+module test2;
+	dut my_dut;
+*/
