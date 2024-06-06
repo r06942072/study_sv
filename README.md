@@ -1,4 +1,6 @@
-billy todo, lab35 and after
+billy todo, lab34 and after
+ lab33, [->2] and [=2]
+ 
 
 # lab steps (with free simulator iverilog)
 	cd lab01
@@ -23,11 +25,16 @@ billy todo, lab35 and after
 # class note
 
 ## Vicky
+- 2024????
+	- sv all, https://verificationguide.com/systemverilog/systemverilog-tutorial/
+- 20240627
+	- ??
 - 20240613
-	- lab33
+	- lab33, [->2] and [=2]
+	- lab34
 - 20240606
 	- lab32
-	- lab33
+	- lab33, [*0]
 - 20240530
 	- https://blog.csdn.net/bleauchat/article/details/90415146
 	- lab31, sva_seq_delay, a3 to a6, infinity

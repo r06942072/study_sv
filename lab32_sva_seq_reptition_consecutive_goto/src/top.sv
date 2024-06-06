@@ -115,7 +115,7 @@ module top;
     endsequence
 
     sequence s2(x, y);
-        (x[*2] ##1 y);  // x[*2] is eq to (x ##1 x) sv_lrm 2017 16.9.2 consecutive
+        (x[*2] ##1 y);  // x[*2] is equal to (x ##1 x) sv_lrm 2017 16.9.2 consecutive
     endsequence
 
     sequence s3(x, y);
@@ -187,3 +187,7 @@ module test
 module test2;
 	dut my_dut;
 */
+
+//5ns, 15ns, 25ns, 35ns ....
+//x1: 0, 0, 1, 1, 0  x1 ##1 x1
+//y1: 0, 0, 0, 0
