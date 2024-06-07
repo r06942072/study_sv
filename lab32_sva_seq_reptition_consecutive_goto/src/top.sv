@@ -141,6 +141,11 @@ module top;
 
     a4_design5: assert property(@(posedge clk) start |=> strong( s4(x5, y5) ));  //pass
     a4_design6: assert property(@(posedge clk) start |=> strong( s4(x6, y6) ));  //fail
+	
+	//summary below
+	//[*] design4 fail, [->] design4 pass
+	//[->] design5 fail, [=] design5 pass
+	//[=] design6 fail
 endmodule
 /*
 //

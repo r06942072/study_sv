@@ -1,6 +1,5 @@
-billy todo, lab34 and after
- lab33, [->2] and [=2]
- 
+billy class, open note.pptx, sv code and waveform
+billy todo, lab40 and after
 
 # lab steps (with free simulator iverilog)
 	cd lab01
@@ -27,11 +26,19 @@ billy todo, lab34 and after
 ## Vicky
 - 2024????
 	- sv all, https://verificationguide.com/systemverilog/systemverilog-tutorial/
+- 20240725
+- 20240718
+- 20240711
+	- lab??
+- 20240704
+	- lab??
 - 20240627
-	- ??
+	- lab36
+	- lab37
 - 20240613
-	- lab33, [->2] and [=2]
-	- lab34
+	- lab33, [->2] and [=2] on d5 and d6
+	- lab34 
+	- lab35 
 - 20240606
 	- lab32
 	- lab33, [*0]

@@ -89,7 +89,7 @@ module top;
     a_and_3:  assert property(@(posedge clk) start |=> s1 and s2 and s3); //pass
     a_and_4:  assert property(@(posedge clk) start |=> s1 and s4); //fail
 
-    a_intersect_1:  assert property(@(posedge clk) start |=> s1 intersect s2); //fail
+    a_intersect_1:  assert property(@(posedge clk) start |=> s1 intersect s2); //fail, because expect s1 and s2 finish at the same time
 
     a_or_1:  assert property(@(posedge clk) start |=> s1 or s4); //pass
     a_or_2:  assert property(@(posedge clk) start |=> s1 or s2 or s3 or s4); //pass
