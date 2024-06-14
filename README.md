@@ -31,14 +31,16 @@ billy todo, lab40 and after
 - 20240711
 	- lab??
 - 20240704
-	- lab??
-- 20240627
 	- lab36
 	- lab37
-- 20240613
-	- lab33, [->2] and [=2] on d5 and d6
-	- lab34 
-	- lab35 
+	- lab38
+	- lab39
+- 20240627
+	- lab34, and, intersect, or
+	- lab35, throughout
+- 20240614
+	- https://www.systemverilog.io/verification/sva-basics/#:~:text=SystemVerilog%20Assertions%20(SVA)%20is%20essentially,format%20which%20tools%20can%20understand
+	- lab32, [->2] and [=2] on d5 and d6
 - 20240606
 	- lab32
 	- lab33, [*0]

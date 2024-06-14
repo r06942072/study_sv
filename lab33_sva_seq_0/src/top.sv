@@ -224,7 +224,7 @@ module top;
         $display("----", $time, " ns, finish");
 	    $finish;
     end
-
+	
     sequence s1(x, y, z);
         (x[*0:2] ##1 y ##1 z); 
     endsequence
@@ -254,3 +254,23 @@ module top;
     a3_design24: assert property(@(posedge clk) start |=> s3(x24, y24, z24)); 
     a3_design25: assert property(@(posedge clk) start |=> s3(x25, y25, z25)); 
 endmodule
+
+//(cnt == ($past(cnt) + 1))
+//($sampled(cnt) == ($past(cnt) + 1))
+
+// logic [3:0] sig = 4'b1000;
+// logic [3:0] sig2 = 4'b0000;
+// logic [3:0] sig3 = 4'b1111;
+
+// $onehot(sig) returns 1
+// $onehot0(sig) returns 1
+
+// $onehot(sig2) returns 0
+// $onehot0(sig2) returns 1
+
+//spec, logic [3:0] inst = 4'b0000;
+//spec, logic [3:0] inst = 4'b0001; //SUB
+//spec, logic [3:0] inst = 4'b0010; //ADD
+//spec, logic [3:0] inst = 4'b0100; //OR
+// value = addr1 op addr2 
+// $onehot(inst)
