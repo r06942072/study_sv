@@ -75,7 +75,7 @@ module top;
         x; 
     endsequence
     sequence s2(y, z);
-        (y && ~z ##1 ~y && z); 
+        (y && ~z ##1 ~y && z);  //2 sample points
     endsequence
 
     a_design1: assert property(@(posedge clk) start |=> s1(x1) within s2(y1, z1)); //pass
@@ -83,5 +83,8 @@ module top;
     a_design3: assert property(@(posedge clk) start |=> s1(x3) within s2(y3, z3)); //fail, because x3 never be 1 within s2 interval
     a_design4: assert property(@(posedge clk) start |=> s1(x4) within s2(y4, z4)); //fail, because s2 not match
 	
-	//summary, seq1 within seq2
+	//summary, seq1(short) within seq2(long)
 endmodule
+
+//3 + 4
+//seq1 <opeartor> seq2

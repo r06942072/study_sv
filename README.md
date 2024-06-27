@@ -31,13 +31,13 @@ billy todo, lab40 and after
 - 20240711
 	- lab??
 - 20240704
-	- lab36
-	- lab37
-	- lab38
-	- lab39
+	- lab37, .triggered
+	- lab38, local
+	- lab39, always
 - 20240627
 	- lab34, and, intersect, or
 	- lab35, throughout
+	- lab36, within
 - 20240614
 	- https://www.systemverilog.io/verification/sva-basics/#:~:text=SystemVerilog%20Assertions%20(SVA)%20is%20essentially,format%20which%20tools%20can%20understand
 	- lab32, [->2] and [=2] on d5 and d6

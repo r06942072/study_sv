@@ -93,15 +93,19 @@ module top;
     end
 	
     sequence s1(x, y);
-        (x ##1 y); 
+        (x ##1 y);  //need to sample twice.  two sample points
     endsequence
 
     a_design1: assert property(@(posedge clk) start |=> exp1 throughout s1(x1, y1));  //pass
     a_design2: assert property(@(posedge clk) start |=> exp2 throughout s1(x2, y2));  //pass, exp2 long
-    a_design3: assert property(@(posedge clk) start |=> exp3 throughout s1(x3, y3));  //fail, exp3 short
-    a_design4: assert property(@(posedge clk) start |=> exp4 throughout s1(x4, y4));  //pass, exp4 async
+    a_design3: assert property(@(posedge clk) start |=> exp3 throughout s1(x3, y3));  //fail, beacuse exp3 is too short
+    a_design4: assert property(@(posedge clk) start |=> exp4 throughout s1(x4, y4));  //pass, exp4 async, exp4 need to be true in all sample points of sequence1
     a_design5: assert property(@(posedge clk) start |=> exp5 throughout s1(x5, y5));  //fail, seq not match, so not related to exp5
 	
+	a_design6: assert property(@(posedge clk) start |=> s1(x5, y5));  //fail
+	
+	// exp1[*0:$] intersect s1(x1, y1)
+	
 	//exp throughout seq
-	//	expression must be true during the sequence
+	//		expression must be true during the sequence
 endmodule
