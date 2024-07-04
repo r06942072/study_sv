@@ -26,14 +26,18 @@ billy todo, lab40 and after
 ## Vicky
 - 2024????
 	- sv all, https://verificationguide.com/systemverilog/systemverilog-tutorial/
-- 20240725
-- 20240718
-- 20240711
+	- Essential Systemverilog for UVM, cadence tutorial (shallow clone deep clone. mod06)
 	- lab??
-- 20240704
+- 20240725
+
+- 20240718
+
+- 20240711
 	- lab37, .triggered
 	- lab38, local
 	- lab39, always
+- 20240704
+	- lab60, config_db, uvm
 - 20240627
 	- lab34, and, intersect, or
 	- lab35, throughout
