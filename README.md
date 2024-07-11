@@ -1,6 +1,3 @@
-billy class, open note.pptx, sv code and waveform
-billy todo, lab40 and after
-
 # lab steps (with free simulator iverilog)
 	cd lab01
 	iverilog -g2012 src/*
@@ -24,14 +21,21 @@ billy todo, lab40 and after
 # class note
 
 ## Vicky
+- billy todo (top to bottom)
+	- lab40 (sva multiclk)
+	- lab25, sv class
+		- 1:40 $case extends constraint, https://www.youtube.com/watch?v=npm1bzoA9Ac
+		- 2:00, write a constraint of an array of 10 elements 
+		- 2:25, rand implement randc
+	- lab60 (uvm)
+	- Essential Systemverilog for UVM, cadence tutorial (shallow clone deep clone. mod06)
+		
 - 2024????
 	- sv all, https://verificationguide.com/systemverilog/systemverilog-tutorial/
-	- Essential Systemverilog for UVM, cadence tutorial (shallow clone deep clone. mod06)
-	- lab??
+
 - 20240725
 
 - 20240718
-
 - 20240711
 	- lab37, .triggered
 	- lab38, local

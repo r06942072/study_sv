@@ -67,17 +67,46 @@ module top;
     a1_design1: assert property(@(posedge clk) start |=> s1(s0(x1, y1), z1)); //pass 
 		//to decompose: 
 		//	s1(s0(x1, y1), z1)
-		//	s0(x1, y1) ##2 z1
-		//	x1 ##1 y1 ##2 z1
+		//		s0(x1, y1) ##2 z1
+		//			x1 ##1 y1 ##2 z1
+		//          	start ##1 x1 ##1 y1 ##2 z1
     a1_design2: assert property(@(posedge clk) start |=> s1(s0(x2, y2), z2)); //fail
-
+		//to decompose: 
+		//				start ##1 x2 ##1 y2 ##2 z2
+		//              start ##1 y2 ##2 z2  		--> pass
+		
     a2_design1: assert property(@(posedge clk) start |=> s2(s0(x1, y1), z1)); //fail
 		//to decompose: 
 		//	s2(s0(x1, y1), z1)
-		//  s0(x1,y1).triggered ##2 z1
-		//  (x1 ##1 y1).triggered ##2 z1
-	
+		//  	s0(x1,y1).triggered ##2 z1
+		//  		start ##1 (x1 ##1 y1).triggered ##2 z1
+		
+		//          timepoint = <15ns> <25ns>                    <35ns>  <45ns>
+		//                      start  (x1 ##1 y1).triggered     none    z1
     a2_design2: assert property(@(posedge clk) start |=> s2(s0(x2, y2), z2)); //pass
-	
-
+		//to decompose: 
+		//  		start ##1 (x2 ##1 y2).triggered ##2 z2
+		
+		//          timepoint = <15ns> <25ns>                    <35ns>  <45ns>
+		//                      start  (x2 ##1 y2).triggered     none    z2
 endmodule
+
+
+/*
+module top;
+	int ans;
+	
+	
+	initial begin
+		ans = 6 + 2;
+		ans = add(6, 2);
+	end
+	
+endmodule
+*/
+
+/*
+	sequence seqq;
+		expression throughout (s1 and s2 intersect s3) ##1 sig==1 [*3] sig2==0;
+	endsequence
+*/
