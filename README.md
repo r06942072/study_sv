@@ -22,11 +22,20 @@
 
 ## Vicky
 - billy todo (top to bottom)
-	- lab40 (sva multiclk)
-	- lab25, sv class
-		- 1:40 $case extends constraint, https://www.youtube.com/watch?v=npm1bzoA9Ac
-		- 2:00, write a constraint of an array of 10 elements 
-		- 2:25, rand implement randc
+	- lab40, run eda playground
+	- lab25, sv class, $cast
+		/dv/vwdb_pv/billylin/try
+	- lab26, sv class
+		/dv/vwdb_pv/billylin/try
+		
+		
+	- lab27, sv class
+	- lab28, sv class
+	- lab29, sv class
+		- https://www.youtube.com/watch?v=npm1bzoA9Ac
+			- 2:00, write a constraint of an array of 10 elements 
+			- 2:25, rand implement randc
+			
 	- lab60 (uvm)
 	- Essential Systemverilog for UVM, cadence tutorial (shallow clone deep clone. mod06)
 		
@@ -34,8 +43,11 @@
 	- sv all, https://verificationguide.com/systemverilog/systemverilog-tutorial/
 
 - 20240725
-
+	- lab25
 - 20240718
+	- lab40, sva multiclk
+	- lab25, sv class, $cast
+	- lab26, sv class
 - 20240711
 	- lab37, .triggered
 	- lab38, local
