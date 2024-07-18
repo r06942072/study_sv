@@ -21,14 +21,7 @@
 # class note
 
 ## Vicky
-- billy todo (top to bottom)
-	- lab40, run eda playground
-	- lab25, sv class, $cast
-		/dv/vwdb_pv/billylin/try
-	- lab26, sv class
-		/dv/vwdb_pv/billylin/try
-		
-		
+- billy todo (top to bottom)		
 	- lab27, sv class
 	- lab28, sv class
 	- lab29, sv class
@@ -36,18 +29,20 @@
 			- 2:00, write a constraint of an array of 10 elements 
 			- 2:25, rand implement randc
 			
-	- lab60 (uvm)
+	- lab61 (uvm)
 	- Essential Systemverilog for UVM, cadence tutorial (shallow clone deep clone. mod06)
 		
 - 2024????
 	- sv all, https://verificationguide.com/systemverilog/systemverilog-tutorial/
 
 - 20240725
-	- lab25
-- 20240718
-	- lab40, sva multiclk
 	- lab25, sv class, $cast
 	- lab26, sv class
+	- lab27
+	- lab28
+	- lab29
+- 20240718
+	- lab40, sva multiclk
 - 20240711
 	- lab37, .triggered
 	- lab38, local

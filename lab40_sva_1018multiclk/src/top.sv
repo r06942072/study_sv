@@ -86,6 +86,8 @@ module diff_clk;
 	
     a1_design2: assert property(@(posedge clk_slow) start |=> s1(x2, y2)); //fail  
     a2_design1: assert property(@(posedge clk_slow) start |=> s2(x1, y1)); //pass
+	// decomposite
+	//         @(posedge clk_slow) start |=> @(posedge clk_slow) x1 ##1 @(posedge clk_fast) y1
     a2_design2: assert property(@(posedge clk_slow) start |=> s2(x2, y2)); //fail  
 endmodule
 
@@ -148,7 +150,85 @@ module same_clk;
     endsequence
 
     a1_design1: assert property(@(posedge clk_slow) start |=> s1(x1, y1)); //pass 
+	// decomposite
+	//         @(posedge clk) start |=> x1 ##0 y1
     a1_design2: assert property(@(posedge clk_slow) start |=> s1(x2, y2)); //fail  
+	// decomposite
+	//         @(posedge clk) start |=> x2 ##0 y2
     a2_design1: assert property(@(posedge clk_slow) start |=> s2(x1, y1)); //fail
+	// decomposite
+	//         @(posedge clk) start |=> x1 ##1 y1	
     a2_design2: assert property(@(posedge clk_slow) start |=> s2(x2, y2)); //pass
+	// decomposite
+	//         @(posedge clk) start |=> x2 ##1 y2		
 endmodule
+
+/*
+sequence s1;
+	a ##1 b; // unclocked sequence
+endsequence
+
+a1_design1: assert property(@(posedge clk2) start |=> @(posedge clk1) s1);
+
+a2_design1: assert property(@(posedge clk2) start |=> a ##1 b);
+
+assert top
+	property
+		sequence bottom
+///////////////////////////////////////
+module top;
+	logic sig; //top.sig
+	logic [1:0] output_c;
+	logic input_a;
+	adder aa1(
+		.a(input_a),
+		.c(output_c)
+	);
+endmodule
+
+module top2;
+	adder2 aa1(); //instance
+endmodule
+
+module m1;
+	logic sig; //top.inst1.sig 
+	bit b1;
+	initial begin
+		sig = 1;
+		//top.inst1.sig = 1;
+		top.sig = 1; //oomr, out of module reference
+		
+		b1 = top.sig;
+	end
+endmodule
+
+module adder (
+	input a,
+	output [1:0] c
+);
+	assign c = a + top.sig;
+endmodule
+
+module adder2 (
+	input a,
+	output [1:0] c
+);
+	assign c = a + top2.sig;
+endmodule
+//////////////////////////////////////////
+sequence s1(x, y);
+	addr1 ##1 addr2
+endsequence 
+
+sequence s2(x, y);
+	data1 ##2 data2
+endsequence 
+
+sequence s_multi; //12-clk-cycle
+	s1 ##1 valid throught(s2) 
+endsequence
+
+property verify_axi;
+	enable |=> s_multi;
+endproperty
+*/
