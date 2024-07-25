@@ -21,26 +21,31 @@
 # class note
 
 ## Vicky
-- billy todo (top to bottom)		
-	- lab27, sv class
-	- lab28, sv class
-	- lab29, sv class
-		- https://www.youtube.com/watch?v=npm1bzoA9Ac
-			- 2:00, write a constraint of an array of 10 elements 
-			- 2:25, rand implement randc
-			
-	- lab61 (uvm)
+- billy todo (top to bottom)
+	- lab61 (uvm) comb_adder
 	- Essential Systemverilog for UVM, cadence tutorial (shallow clone deep clone. mod06)
-		
 - 2024????
 	- sv all, https://verificationguide.com/systemverilog/systemverilog-tutorial/
 
+- 20240912
+
+- 20240905
+
+- 20240829
+
+- 20240822
+
+- 20240815
+
+- 20240808
+
+- 20240801
+	- lab27, sv class, constraint of an array of 10 elements
+	- lab28, sv class, implement randc behavior by using rand 
+	- lab29, sv class, solve before
 - 20240725
 	- lab25, sv class, $cast
-	- lab26, sv class
-	- lab27
-	- lab28
-	- lab29
+	- lab26, sv class, $cast, c1 and c2
 - 20240718
 	- lab40, sva multiclk
 - 20240711
