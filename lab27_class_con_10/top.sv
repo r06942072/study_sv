@@ -27,7 +27,29 @@ module top;
     initial begin
         assert(inst1.randomize());
         $display("inst1 = %p", inst1.arr1);
+		
         assert(inst1.randomize());
         $display("inst1 = %p", inst1.arr1);
     end
 endmodule
+
+/*
+	foreach(arr1[i]) {
+		if (i>=1 && i<=4) //0,1,2,3,4
+			arr1[i] > arr1[i-1];
+	}
+	foreach(arr1[i]) {
+		if (i>=5 && i<=9)
+			arr1[i] < arr1[i-1];
+	}
+*/
+/*
+module top; //design unit DU
+	class c1;
+	endclass
+endmodule
+
+module top2;
+	c1 inst = new(); //invalid
+endmodule 
+*/

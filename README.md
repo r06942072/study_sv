@@ -22,8 +22,11 @@
 
 ## Vicky
 - billy todo (top to bottom)
+	- virtual intf
 	- lab61 (uvm) comb_adder
 	- Essential Systemverilog for UVM, cadence tutorial (shallow clone deep clone. mod06)
+	- https://www.youtube.com/@MunsifMAhmad/playlists
+
 - 2024????
 	- sv all, https://verificationguide.com/systemverilog/systemverilog-tutorial/
 

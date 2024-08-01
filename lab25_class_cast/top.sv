@@ -42,6 +42,10 @@ module top();
     end
 endmodule
 
+
+//int status = pkt.randomize()
+//void'(pkt.randomize())
+
 /*
 	pkt.c1.constraint_mode(0);
 */

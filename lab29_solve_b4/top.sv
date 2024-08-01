@@ -3,15 +3,26 @@
 class ABC;
     rand bit a;
     rand bit [1:0] b; //range 0~3
-
+	/*
+	(a,b) = (0,0) (0,1) (0,2) (0,3)
+	(a,b) = (1,0) (1,1) (1,2) (1,3)
+	*/
+	/*
+	(a,b) = (0,0) (0,1) (0,2) (0,3)
+	(a,b) =                   (1,3)
+	*/
     constraint c1 { a -> b == 2'd3; }  
+	//constraint c1 { (a==1) -> b == 2'd3; }  
 endclass
 
 class DEF;
     rand bit a;
     rand bit [1:0] b; //range 0~3
-
-    constraint c1 { a -> b == 2'd3; solve a before b;}
+	/*
+	(a,b) = (0,0) (0,1) (0,2) (0,3)
+	(a,b) =                   (1,3)
+	*/
+    constraint c1 { a -> b == 2'd3;    solve a before b;}
     // a has to be solved first, before attempting b
 endclass
 
@@ -43,7 +54,6 @@ module top;
         $display("*********************");
         $display("*********************");
         $display("*********************");
-
 
         cnt_a0_b0 = 0;
         cnt_a0_b1 = 0;
