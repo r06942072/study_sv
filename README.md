@@ -41,7 +41,8 @@
 - 20240815
 
 - 20240808
-
+	- in uvm_ref, there are 3 pdf files 
+	- lab61, uvm_hello
 - 20240801
 	- lab27, sv class, constraint of an array of 10 elements
 	- lab28, sv class, implement randc behavior by using rand 
